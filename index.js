@@ -13,7 +13,7 @@ app.use(express.json());
 
 
 app.use(function(req, res, next) {
-    res.setHandler("Content-Type", "application/json");
+    res.setHeader("Content-Type", "application/json");
     next();
 });
 
